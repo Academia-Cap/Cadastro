@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Aluno : Cadastro</title>
+
+    <script src="./Script/aluno.js"></script>
+
+    <script>
+        function cadastrar(){
+            nome = document.getElementById("idNome").value
+            login = document.getElementById("idLogin").value
+            senha = document.getElementById("idSenha").value
+            email = document.getElementById("idEmail").value
+            escola = document.getElementById("idEscola").value
+            matricula = document.getElementById("idMat").value
+
+            let aluno = new Aluno(nome,login,senha,email,escola,matricula)
+            aluno.salvar()
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div>
+        <form action="">
+            <div>
+                <label for="">Nome</label>
+                <input type="text" id="idNome">
+
+                <label for="">Login</label>
+                <input type="text" id="idLogin">
+                
+                <label for="">Senha</label>
+                <input type="password" id="idSenha">
+
+                <label for="">E-mail</label>
+                <input type="email" id="idEmail">
+
+                <label for="">Escola</label>
+                <input type="text" id="idEscola">
+
+                <label for="">Matricula</label>
+                <input type="text" id="idMat">
+            </div>
+            <div>
+                <button onclick="cadastrar()">Cadastrar</button>
+                <button>Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

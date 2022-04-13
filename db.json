@@ -1,0 +1,31 @@
+{
+  "aluno": [
+    {
+      "nome": "tania",
+      "login": "taniarocha",
+      "senha": "1234",
+      "email": "tania@eu.com",
+      "escola": "IF",
+      "matricula": "1234",
+      "id": 1
+    },
+    {
+      "nome": "Alice",
+      "login": "alicefel",
+      "senha": "123",
+      "email": "alice@eu.com",
+      "escola": "Uniasselvi",
+      "matricula": "56743",
+      "id": 2
+    },
+    {
+      "nome": "Caroline",
+      "login": "carol",
+      "senha": "123",
+      "email": "caroline@eu.com",
+      "escola": "IF",
+      "matricula": "56788764545",
+      "id": 3
+    }
+  ]
+}
