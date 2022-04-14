@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Aluno</title>
+    <script src="./scripts/aluno.js"></script>
+    <script>
+        function editar() {
+            const urlParametros  = new URLSearchParams(window.location.search)
+            let idAluno = urlParametros.get('id')
+
+            let obj = new Aluno()
+            obj.consultarId(idAluno, preencherForm)
+        }
+
+        function preencherForm(dado){
+            let ob = JSON.parse(dado);
+            document.getElementById("id").value = ob.id
+            document.getElementById("idNome").value = ob.nome
+            document.getElementById("idLogin").value = ob.login
+            document.getElementById("idSenha").value = ob.senha
+            document.getElementById("idEmail").value = ob.email
+            document.getElementById("idEscola").value = ob.escola
+            document.getElementById("idMat").value = ob.matricula 
+        }
+
+        function gravar(){
+            var id = document.getElementById("id").value
+            var nome = document.getElementById("idNome").value
+            var login = document.getElementById("idLogin").value
+            var senha = document.getElementById("idSenha").value
+            var email = document.getElementById("idEmail").value
+            var escola = document.getElementById("idEscola").value
+            var matricula = document.getElementById("idMat").value
+
+            let aluno = new Aluno(id,nome,login,senha,email,escola,matricula)
+            aluno.update();
+        }
+
+
+    </script>
+</head>
+
+<body onload="editar()">
+    <div>
+        <form action="">
+            <div>
+                <label for="">Id</label>
+                <input type="text" id="id" disabled>
+
+                <label for="">Nome</label>
+                <input type="text" id="idNome" required>
+
+                <label for="">Login</label>
+                <input type="text" id="idLogin" required>
+
+                <label for="">Senha</label>
+                <input type="password" id="idSenha" required>
+
+                <label for="">E-mail</label>
+                <input type="email" id="idEmail" required>
+
+                <label for="">Escola</label>
+                <input type="text" id="idEscola" required>
+
+                <label for="">Matricula</label>
+                <input type="text" id="idMat" required>
+            </div>
+            <div>
+                <button onclick="gravar()">Cadastrar</button>
+                <button>Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

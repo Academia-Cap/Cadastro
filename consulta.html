@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta</title>
 
-    <script src="./Script/aluno.js"></script>
+    <script src="./scripts/aluno.js"></script>
 
     <script>
         function loadAluno() {
@@ -19,37 +19,39 @@
             var tag = ""
             for (let indice in lista) {
                 tag += `<tr>
+                            <td>${lista[indice].id} </td>
                             <td>${lista[indice].nome} </td>
-                            <td>${ lista[indice].login } </td>   
-                            <td>${ lista[indice].senha } </td> 
-                            <td>${ lista[indice].email } </td>     
-                            <td>${ lista[indice].escola } </td>  
+                            <td>${lista[indice].login} </td>   
+                            <td>${lista[indice].senha} </td> 
+                            <td>${lista[indice].email} </td>     
+                            <td>${lista[indice].escola} </td>  
                             <td>${lista[indice].matricula} </td>                
+                            <td><a href="editar.html?id=${lista[indice].id}">Editar</a></td>                
                         </tr>`
-                    document.getElementsByTagName("tbody")[0].innerHTML = tag;
-                }
+                document.getElementsByTagName("tbody")[0].innerHTML = tag;
             }
+        }
     </script>
 
 </head>
 
 <body onload="loadAluno()">
-
     <table>
         <thead>
             <tr>
-                <th>id</th>
+                <th>Id</th>
                 <th>Nome</th>
                 <th>Login</th>
                 <th>Senha</th>
                 <th>E-mail</th>
                 <th>Escola</th>
                 <th>Matricula</th>
+                <th>Ações</th>
             </tr>
         </thead>
 
         <tbody>
-            
+
         </tbody>
     </table>
 
