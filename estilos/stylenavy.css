@@ -1,0 +1,14 @@
+.div-bar {
+    display: inline;
+}
+
+.navy-dp {
+    background-color: #e63946;
+    color: white;
+}
+
+.navy-back {
+    background-color: #e63946;
+    text-align: center;
+    padding: 10px;
+}
