@@ -8,4 +8,6 @@ function cadastrar(){
 
     let aluno = new Aluno(0,nome,login,senha,email,escola,matricula)
     aluno.salvar()
+    
+    window.location.href='consulta.html'
 }

@@ -1,0 +1,56 @@
+.body-color {
+    background-color: #f1faee;
+}
+
+.div-login {
+    width: 400px;
+    margin: auto;
+    background-color:#1d3557;
+    color: white;
+    padding: 20px;
+    margin-top: 12%;
+    border-radius: 20px;
+}
+
+.input-login {
+    width: 90%;
+    margin-left: 3%;
+    border-radius: 5px;
+}
+
+.label-login {
+    margin-left: 3%;
+}
+
+.a-cadastro {
+    text-decoration: none;
+    color: #e63946;
+}
+
+.div-cadastro{
+    width: 600px;
+    margin: auto;
+    background-color:#1d3557;
+    color: white;
+    padding: 20px;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+.input-cadastro {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+.label-cadastro{
+    margin-left: 5%;
+}
+
+.btn-cadastro-1{
+    margin-left:  5%;
+}
+
+.btn-cadastro-2{
+    margin-left:  57%;
+}

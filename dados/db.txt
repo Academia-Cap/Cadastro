@@ -44,6 +44,24 @@
       "email": "tania@trocha.com",
       "escola": "cap",
       "matricula": "113131313"
+    },
+    {
+      "id": 7,
+      "nome": "Carol",
+      "login": "cah",
+      "senha": "32424",
+      "email": "carolineeeeeeeeee@eu.com",
+      "escola": "IF",
+      "matricula": "453467563"
+    },
+    {
+      "id": 8,
+      "nome": "Vilson",
+      "login": "Moro",
+      "senha": "",
+      "email": "morooooo@eu.com",
+      "escola": "IF",
+      "matricula": "98314713"
     }
   ]
 }
