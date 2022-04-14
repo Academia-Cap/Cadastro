@@ -26,6 +26,24 @@
       "email": "caroline@eu.com",
       "escola": "IF",
       "matricula": "56788764545"
+    },
+    {
+      "id": 4,
+      "nome": "tania",
+      "login": "taniarocha",
+      "senha": "123242",
+      "email": "tania@eu.com",
+      "escola": "rrrrr",
+      "matricula": "12345"
+    },
+    {
+      "id": 5,
+      "nome": "tania",
+      "login": "amigas",
+      "senha": "12131",
+      "email": "tania@trocha.com",
+      "escola": "cap",
+      "matricula": "113131313"
     }
   ]
 }
