@@ -38,8 +38,13 @@
 
             let aluno = new Aluno(id,nome,login,senha,email,escola,matricula)
             aluno.update();
+
+            window.history.go(-1);//vericar com o professor
         }
 
+        function voltar(){
+            window.history.go(-1);
+        }
 
     </script>
 </head>
@@ -70,8 +75,8 @@
                 <input type="text" id="idMat" required>
             </div>
             <div>
-                <button onclick="gravar()">Cadastrar</button>
-                <button>Cancelar</button>
+                <button onclick="gravar()" type="reset">Cadastrar</button>
+                <button onclick="voltar()" type="reset">Cancelar</button>
             </div>
         </form>
     </div>

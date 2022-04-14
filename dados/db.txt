@@ -1,13 +1,13 @@
 {
   "aluno": [
     {
-      "nome": "tania",
+      "id": 1,
+      "nome": "Tania",
       "login": "taniarocha",
       "senha": "1234",
       "email": "tania@eu.com",
       "escola": "IF",
-      "matricula": "1234",
-      "id": 1
+      "matricula": "1234"
     },
     {
       "nome": "Alice",
@@ -21,7 +21,7 @@
     {
       "id": 3,
       "nome": "Carol",
-      "login": "carol",
+      "login": "cah",
       "senha": "123",
       "email": "caroline@eu.com",
       "escola": "IF",

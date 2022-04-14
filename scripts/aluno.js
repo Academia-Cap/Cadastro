@@ -40,5 +40,12 @@ class Aluno{
             headers: {'content-type':'application/JSON'}
         })
     }
+
+    deletar(idAluno){
+        fetch(`${URLAluno}/${idAluno}`,
+        {
+            method: 'DELETE'
+        })
+    }
 }
 
