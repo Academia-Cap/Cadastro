@@ -54,3 +54,26 @@
 .btn-cadastro-2{
     margin-left:  57%;
 }
+
+.div-consulta{
+    width: 900px;
+    margin: auto;
+    background-color:#1d3557;
+    color: white;
+    padding: 30px;
+    margin-top: 6%;
+    border-radius: 20px;
+}
+
+table tr{
+    color: white;
+}
+
+table th{
+    color: white;
+}
+
+.bi{
+    color: #e63946;
+    margin-right: 10px;
+}

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nome": "Tania",
-      "login": "taniarocha",
+      "login": "TaniaRocha",
       "senha": "1234",
       "email": "tania@eu.com",
       "escola": "IF",
@@ -58,7 +58,7 @@
       "id": 8,
       "nome": "Vilson",
       "login": "Moro",
-      "senha": "",
+      "senha": "3133121",
       "email": "morooooo@eu.com",
       "escola": "IF",
       "matricula": "98314713"

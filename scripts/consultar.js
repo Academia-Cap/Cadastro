@@ -16,8 +16,8 @@ function display(dados) {
                     <td>${lista[indice].escola} </td>  
                     <td>${lista[indice].matricula} </td>                
                     <td>
-                        <a href="editar.html?id=${lista[indice].id}">Editar </a>/
-                        <a href="#" onclick="excluir(${lista[indice].id})">Excluir</a>
+                        <a href="editar.html?id=${lista[indice].id}"><i class="bi bi-pencil"></i></a>
+                        <a href="#" onclick="excluir(${lista[indice].id})"><i class="bi bi-trash"></i></a>
                     </td>                
                 </tr>`
         document.getElementsByTagName("tbody")[0].innerHTML = tag;
